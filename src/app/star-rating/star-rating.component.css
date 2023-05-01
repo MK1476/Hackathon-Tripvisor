@@ -1,0 +1,30 @@
+span {
+    display: inline-block;
+    height: 24px;
+    /* color: yellow; */
+}
+.base {
+    position: relative;
+}
+.lefthalf, .righthalf {
+    width: 12px;
+    position: absolute;
+}
+.righthalf {
+    left: 12px;
+}
+:host {
+    background: white;
+}
+button {
+    background: #171717;
+    color: white;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+textarea {
+  resize: none;
+}
+mat-form-field{
+  height: 15rem;
+}

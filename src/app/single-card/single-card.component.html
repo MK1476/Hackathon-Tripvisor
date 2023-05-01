@@ -1,0 +1,22 @@
+<ng-container>
+  <button
+    (click)="click()"
+    class="cityButton flex flex-col shrink-0 relative text-right h-[320px] sm:h-[350px] w-[220px] sm:w-[250px]"
+    [ngStyle]="{
+      backgroundImage:
+        'linear-gradient(155deg, rgba(255, 255, 255, 0.0) 58%, rgba(23, 23, 23, 0.5) 70%), url(' +
+        place.img +
+        ')'
+    }"
+    appHighlight
+  >
+    <mat-icon
+      fontIcon="{{ bookmarked ? 'bookmark' : 'bookmark_outline' }}"
+      (click)="toggleBookmark($event)"
+      fontIcon="bookmark_outline"
+    ></mat-icon>
+    <p class="text-3xl absolute top-[75%] w-full right-[5%]">
+      {{ place.name }}
+    </p>
+  </button>
+</ng-container>

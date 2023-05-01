@@ -1,0 +1,39 @@
+.cityButton {
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  margin-block: 20px;
+  margin-inline: 12px;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+  font-weight: bold;
+}
+.cityButton:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.05);
+}
+.cityButton:first-of-type {
+  margin-left: 15px;
+}
+#cityButtonsContainer {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#cityButtonsContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+mat-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+}

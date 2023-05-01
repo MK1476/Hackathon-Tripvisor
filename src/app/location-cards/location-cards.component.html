@@ -1,0 +1,14 @@
+<div
+  class="flex"
+  id="cityButtonsContainer"
+  infiniteScroll
+  [infiniteScrollDistance]="4"
+  [infiniteScrollThrottle]="0"
+  [horizontal]="true"
+  [scrollWindow]="false"
+  (scrolled)="onScroll()"
+>
+  <ng-container *ngFor="let location of locations">
+    <app-single-card (click) = "click(location)" [place] = "location" [navigateOnClick]="navigateOnClick"></app-single-card>
+  </ng-container>
+</div>

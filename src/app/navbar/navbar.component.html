@@ -1,0 +1,34 @@
+<div id="container" class="flex row justify-between bgNav fixed top-0 z-50">
+  <div>
+    <!--<a class="text-white ml-[10px]"><strong>↑</strong>our Macedonia</a>-->
+    <img routerLink="/" id="logo" src="assets\Tripvisor__2_-removebg-preview.png" alt = 'Tripvisor' />
+  </div>
+  <div class="flex row justify-end">
+    <app-search (click)="onSearchClick($event)" *ngIf="searchEnabled"></app-search>
+    <button
+      (click)="signInButtonClick($event)"
+      class="flex flex-col justify-center mr-[8px]"
+      title="User"
+    >
+      <img src="assets/account.svg" />
+      <div (click) = "onSignInClick($event)" id="signIn">
+        <app-signin #signIn *ngIf="signInVisible"></app-signin>
+      </div>
+    </button>
+    <button
+      class="mr-[8px]"
+      title="Search locations"
+      (click)="search($event)"
+    >
+      <img src="assets/search2.svg" />
+    </button>
+    <button
+      class="mr-[10px]"
+      title="Explore locations"
+      (click)="scroll('citiesDiv')"
+      *ngIf="displayScroll"
+    >
+      <img src="assets/cities2.svg" />
+    </button>
+  </div>
+</div>

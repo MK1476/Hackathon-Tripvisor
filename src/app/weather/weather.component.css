@@ -1,0 +1,11 @@
+:host() {
+    display: block;
+    text-transform: capitalize;
+}
+img {
+    width: 40px;
+}
+
+.minW {
+  min-width: 8rem;
+}

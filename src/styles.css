@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Quicksand:wght@500&display=swap");
+
+.frosted {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    rgba(156, 156, 156, 0.34),
+    rgba(106, 106, 106, 0.3)
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+body {
+  margin: 0;
+  font-family: Manrope, "Helvetica Neue", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
